@@ -1,0 +1,41 @@
+/*RESET*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'Lato', sans-serif;
+}
+/*SHARED*/
+:root {
+    --header-title-font-size: 2rem;
+    --main-text-font-size: 1.6rem;
+    --footer-text-font-size: 1.4rem;
+}
+.header,
+.main,
+.footer {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.image {
+    width: 50%;
+}
+/*HEADER*/
+.header-title {
+    font-size: var(--header-title-font-size);
+}
+/*MAIN*/
+.main {
+    font-size: var(--main-text-font-size);
+}
+.main-title-span {
+    color: blue;
+    font-weight: 700;
+}
+/*FOOTER*/
+.footer {
+    font-size: var(--footer-text-font-size);
+}
