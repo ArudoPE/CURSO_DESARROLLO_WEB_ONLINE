@@ -10,14 +10,14 @@
     <title>Aldo Ortiz | Portafolio</title>
 </head>
 <body>
-    <header class="header">
+    <header class="header flex">
         <div class="logo-container">
             <figure>
                 <img src="./img/favicon.ico" alt="Aldo Ortiz Logo">
             </figure>
         </div>
         <nav class="nav">
-            <div class="nav-link-bar">
+            <div class="nav-link-bar flex">
             <ul>
                 <li class="nav-list-item"><a class="nav-link" href="#portfolio-section">Portafolio</a></li>
             </ul>
@@ -30,8 +30,8 @@
             </div>
         </nav>
     </header>
-    <main class="main">
-        <section class="main-welcome">
+    <main class="main margin">
+        <section class="main-welcome flex">
             <h1 class="main-section-h1">
                 ¡Hola! Soy <span class="main-title-span">Aldo Ortiz</span>, desarrollador
                 <span class="main-title-span">Front-end</span> con amplia experiencia en <span class="main-title-span">HTML</span> y <span class="main-title-span">CSS</span>.
@@ -42,36 +42,39 @@
                 <img class="welcome-image image" src="./img/hero-small.jpg" alt="Main welcome image">
             </picture>
         </section>
-        <section class="main-section">
-            <h2 class="main-section-h2">Sección principal</h2>
-        </section>
-        <section class="portfolio-section" id="portfolio-section">
-            <h2 class="main-section-h2">Portafolio (Proyectos Destacados)</h2>
-            <article class="portfolio-section-article">
-                <h3 class="main-section-h3">Platzi Video</h3>
-                <h6 class="main-section-h6">React Native / React</h6>
-                <p class="small-text main-text"><span class="bold">Fecha:</span> 01/01/2021</p>
-                <p class="small-text main-text"><span class="bold">Puedes verlo en:</span> www.platzi.com/native</p>
-                <p class="main-text">Este fue el resutaldo de querer realizar xxx para poder lograr xxx y así
-                tener disponible una plataforma para xxx
-                </p>
-            </article>
-        </section>
-        <section class="experience-section" id="experience-section">
-            <h2 class="main-section-h2">Más sobre mi experiencia:</h2>
-            <article>
+        <section class="portfolio-section flex" id="portfolio-section">
+            <h2 class="main-section-h2 center-text">Portafolio (Proyectos Destacados)</h2>
+            <div class="section-article flex">
+                <div>
+                <div class="section-info">
+                    <h3 class="main-section-h3">Platzi Video</h3>
+                    <h6 class="main-section-h6">React Native / React</h6>
+                    <p class="small-text main-text"><span class="bold">Fecha:</span> 01/01/2021</p>
+                    <p class="small-text main-text"><span class="bold">Puedes verlo en:</span> www.platzi.com/native</p>
+                </div>
+                <p class="main-text">Este fue el resultado de querer realizar un reproductor en línea, el cual
+                    permitiese ver videos en baja o alta calidad dependiendo de la calidad de la conexión</p>
+                </div>
                 <figure>
-                    <img src="./img/platzi-conf.jpg" alt="Platzi Conf Image"/>
+                <img class="image" src="./img/video_app.jpg" alt="Video app image"/>
                 </figure>
+                </div>
+            </div>
+        </section>
+        <section class="experience-section flex" id="experience-section">
+            <h2 class="main-section-h2">Más sobre mi experiencia:</h2>
+            <div>
                 <h3 class="main-section-h3">PlaziConf Perú 2021</h3>
                 <p class="main-text">El evento más grande del mundo Tech realizado en Perú.</p>
                 <a href="https://www.youtube.com/watch?v=wFJjY2TISIk&list=PLa28R7QEiMbm8jQh-wugF0u7xbb2TtWuj"
-                target="_blank" alt="Link Platzi Conf">
-                    Ver plática</a>
-            </article>
+                class="section-link" target="_blank" alt="Link Platzi Conf">Ver plática</a>
+                <figure>
+                    <img class="main-image image" src="./img/platzi-conf.jpg" alt="Platzi Conf Image"/>
+                </figure>
+            </div>
         </section>
-        <section class="contact-section" id="contact-section">
-            <form action="/suscripcion/">
+        <section class="contact-section flex" id="contact-section">
+            <form action="/suscripcion/" class="form-email">
                 <h3 class="main-section-h3">¿Creamos algo juntos?</h3>
                 <label for="email">
                     <span class="input-span">Correo:</span>
@@ -81,8 +84,8 @@
             </form>
         </section>
     </main>
-    <footer class="footer">
-        <p>Made with L by ArudoPE</p>
+    <footer class="footer flex">
+        <p class="footer-text">Made with ❤️ by ArudoPE</p>
     </footer>
 </body>
 </html>

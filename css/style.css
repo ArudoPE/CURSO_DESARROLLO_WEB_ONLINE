@@ -6,36 +6,100 @@
 }
 html {
     font-size: 62.5%;
+}
+body {
+    color: var(--text-color);
+    background-color: var(--background-color);
     font-family: 'Lato', sans-serif;
 }
 /*SHARED*/
 :root {
-    --header-title-font-size: 2rem;
-    --main-text-font-size: 1.6rem;
-    --footer-text-font-size: 1.4rem;
-}
-.header,
-.main,
-.footer {
-    margin-left: 10px;
-    margin-right: 10px;
+    --text-color: white;
+    --title-text-color: rgb(64, 64, 252);
+    --background-color: rgb(14, 14, 14);
+    --header-nav-link-font-size: 1.6rem;
+    --main-h1-font-size: 1.6rem;
+    --main-text-font-size: 1.4rem;
+    --footer-font-size: 1.5rem;
 }
 .image {
-    width: 50%;
+    width: 80%;
+}
+.flex {
+    display: flex;
+}
+.margin {
+    margin: 1rem 1rem 0 1rem;
+}
+.center-text {
+    text-align: center;
+}
+.section-article {
+    column-gap: 10px;
+    align-items: center;
 }
 /*HEADER*/
-.header-title {
-    font-size: var(--header-title-font-size);
+.header {
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+.nav-link-bar {
+    column-gap: 1rem;
+}
+.nav-link {
+    font-size: var(--header-nav-link-font-size);
+    text-decoration: underline;
+    color: white;
+}
+.nav-list-item {
+    list-style: none;
 }
 /*MAIN*/
-.main {
+.main-title-span,
+.main-section-h2 {
+    color: var(--title-text-color);
+}
+.main-section-h1 {
+    letter-spacing: -0.2px;
+    font-size: var(--main-h1-font-size);
+}
+.section-link {
+    color: var(--text-color);
+}
+.main-text {
     font-size: var(--main-text-font-size);
 }
-.main-title-span {
-    color: blue;
-    font-weight: 700;
+.main-image {
+    width: 80%;
+}
+.portfolio-section,
+.experience-section {
+    flex-direction: column;
+    border: 1px solid grey;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    padding-left: 10px;
 }
 /*FOOTER*/
 .footer {
-    font-size: var(--footer-text-font-size);
+    justify-content: center;
+}
+.footer-text {
+    font-size: var(--footer-font-size);
+}
+/*MEDIA QUERIES*/
+@media (min-width:900px) {
+    :root {
+        --header-nav-link-font-size: 2rem;
+        --footer-font-size: 1.7rem;
+    }
+    .header {
+        justify-content: flex-start;
+        margin-left: 10px;
+    }
+    .nav-link:hover {
+        color: rgb(177, 19, 19);
+    }
 }
